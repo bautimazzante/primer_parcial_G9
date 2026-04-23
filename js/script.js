@@ -43,11 +43,22 @@ botonConvertir.addEventListener("click", function(){
     const resultado = valor * 2.20462;
     resultadoElemento.textContent = resultado.toFixed(2) + " lb"; 
     }
+    else if(tipo === "lb-kg"){
+        const resultado = valor / 2.20462;
+        resultadoElemento.textContent = resultado.toFixed(2) + " kg"; 
+    }
     else if(tipo === "f-c"){
     const resultado = (valor - 32) * 5 / 9;
     resultadoElemento.textContent = resultado.toFixed(2) + " °C";
+    }
+    else if(tipo === "l-gal"){
+        const resultado = valor / 3.785;
+        resultadoElemento.textContent = resultado.toFixed(2) + " Galones";
+    }
+    else if(tipo === "gal-l"){
+        const resultado = valor * 3.785;
+        resultadoElemento.textContent = resultado.toFixed(2) + " Litros";
     };
-   
 });
 
 
