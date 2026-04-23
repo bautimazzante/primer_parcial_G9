@@ -9,20 +9,24 @@
 
 <div class="container">
 
-    <h1>Unit Converter</h1>
+    <h1>Calculadora</h1>
 
-    <input type="number" id="valor" placeholder="Enter value">
+    <label for="valor">Valor a convertir:</label>
+        <input type="number" id="valor" placeholder="Ej: 100">
+        <label for="tipo">Seleccionar conversión:</label>
 
     <select id="tipo">
-        <option value="">Select conversion</option>
-        <option value="m-km">Meters to Kilometers</option>
-        <option value="km-m">Kilometers to Meters</option>
-        <option value="c-f">Celsius to Fahrenheit</option>
+        <option value="m-km">Metros a Kilómetros</option>
+        <option value="km-m">Kilómetros a Metros</option>
+        <option value="c-f">Celsius a Fahrenheit</option>
+        <option value="f-c">Fahrenheit a Celsius</option>
+        <option value="kg-lb">Kilogramos a Libras</option>
+
     </select>
 
-    <button id="convertir">Convert</button>
+    <button id="convertir">Calcular</button>
 
-    <p id="resultado"></p>
+    <p id="resultado">0</p>
 
 </div>
 

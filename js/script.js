@@ -29,15 +29,23 @@ botonConvertir.addEventListener("click", function(){
     if(tipo === "m-km"){
         const resultado = valor / 1000;
         console.log(resultado);
-        resultadoElemento.textContent = resultado;
+        resultadoElemento.textContent = resultado.toFixed(2) + " Km";
     }
     else if(tipo === "km-m"){
         const resultado = valor * 1000;
-        resultadoElemento.textContent = resultado;
+        resultadoElemento.textContent = resultado.toFixed(2) + " M";
     } 
     else if(tipo === "c-f"){
        const resultado = (valor * 9/5) + 32;
-       resultadoElemento.textContent = resultado;
+       resultadoElemento.textContent = resultado.toFixed(2) + " °F";
+    }
+    else if(tipo === "kg-lb"){
+    const resultado = valor * 2.20462;
+    resultadoElemento.textContent = resultado.toFixed(2) + " lb"; 
+    }
+    else if(tipo === "f-c"){
+    const resultado = (valor - 32) * 5 / 9;
+    resultadoElemento.textContent = resultado.toFixed(2) + " °C";
     };
    
 });
